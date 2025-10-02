@@ -1,22 +1,22 @@
 function checkPassword() {
-  const pass = document.getElementById("password").value;
+  const pass = document.getElementById("password").value.trim();
   const error = document.getElementById("error-message");
 
   if (pass === "22Aug" || pass === "19Jul") {
-    window.location.href = "home.html";
+    // Redirect directly to Love Page
+    window.location.href = "love.html";
   } else {
     error.textContent = "Only our special days can unlock my heart 💕";
-    document.querySelector(".lock-container").classList.add("shake");
-    setTimeout(() => {
-      document.querySelector(".lock-container").classList.remove("shake");
-    }, 500);
+    const box = document.querySelector(".lock-container");
+    box.classList.add("shake");
+    setTimeout(() => box.classList.remove("shake"), 500);
   }
 }
 
 function celebrate() {
   alert("Yay! 🎉 You said YES 💖💍");
-  // simple confetti fallback
   const canvas = document.getElementById("confetti");
+  if (!canvas) return;
   const ctx = canvas.getContext("2d");
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
