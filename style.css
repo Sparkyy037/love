@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(135deg, #ffc0cb, #ff99cc);
+  text-align: center;
+  color: #d63384;
+}
+
+/* Lock Page */
+.lock-container {
+  margin-top: 20%;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  display: inline-block;
+}
+.lock-icon {
+  font-size: 50px;
+}
+input, button {
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+button {
+  background: #ff69b4;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background: #ff85c1;
+}
+#error-message {
+  color: red;
+  font-size: 14px;
+}
+
+/* Home Page */
+nav a {
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  background: #ff69b4;
+  border-radius: 10px;
+}
+nav a:hover {
+  background: #ff85c1;
+}
+
+/* Timeline */
+.timeline .event {
+  margin: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #ffb6c1;
+}
+
+/* Gallery */
+.gallery img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Proposal */
+.proposal-text {
+  margin-top: 20%;
+  font-size: 3em;
+}
+.buttons button {
+  margin: 20px;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  background: #ff69b4;
+  color: white;
+  border-radius: 15px;
+  border: none;
+}
+.sticker-top {
+  width: 80px;
+  margin: 10px auto;
+  display: block;
+}
+
+.sticker-inline {
+  width: 60px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.sticker-small {
+  width: 50px;
+  margin-top: 10px;
+}
+
+.sticker-corner {
+  position: absolute;
+  width: 70px;
+  top: 10px;
+}
+.sticker-corner.left {
+  left: 10px;
+}
+.sticker-corner.right {
+  right: 10px;
+}
